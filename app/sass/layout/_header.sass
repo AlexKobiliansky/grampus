@@ -1,0 +1,86 @@
+.main-head
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 27px 0
+
+.s-intro
+  position: relative
+  overflow: hidden
+  .container
+    position: relative
+    z-index: 2
+
+.bg-intro
+  position: absolute
+  top: 0
+  left: -370px
+  z-index: -1
+
+.site-info
+  margin-left: 30px
+  display: flex
+  align-items: center
+  .logo
+    margin-right: 30px
+
+.site-desc
+  font-size: 14px
+  color: #fff
+  line-height: 1
+  position: relative
+  top: 4px
+
+.header-contacts
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .call
+    position: relative
+    margin-right: 40px
+    &:before
+      content: ''
+      position: absolute
+      width: 21px
+      height: 21px
+      +bg-cover
+      top: 0
+      left: -30px
+      background-image: url('../img/icons/whatsapp-icon.png')
+    a
+      font-size: 18px
+      font-weight: 700
+      display: block
+      color: $text
+      line-height: 1
+      margin-bottom: 1px
+      &:hover
+        color: $accent
+    span
+      font-size: 14px
+      color: #6d6d6d
+      line-height: 1
+
+.intro-content
+  color: #fff
+  padding-left: 30px
+  h2
+    margin-top: 95px
+    font-size: 14px
+    text-transform: uppercase
+    font-weight: normal
+    margin-bottom: 20px
+    letter-spacing: 0.075em
+  h1
+    font-size: 42px
+    line-height: 1.2
+    margin-bottom: 10px
+  p
+    font-size: 18px
+    margin-bottom: 0
+  .btn
+    margin-top: 45px
+
+.intro-img
+  position: relative
+  left: 60px
