@@ -1,0 +1,35 @@
+.s-begin
+  padding: 100px 0 130px
+  position: relative
+  overflow: hidden
+  .container
+    position: relative
+    z-index: 2
+  .section-title-wrap
+    text-align: center
+  .section-title
+    display: inline-block
+    color: $accent
+    position: relative
+    &:before, &:after
+      content: ''
+      position: absolute
+      width: 60px
+      height: 60px
+      +bg-cover
+      background-image: url('../img/pampam-img.png')
+      top: -35px
+    &:before
+      transform: scale(-1, 1)
+      left: -90px
+    &:after
+      right: -90px
+  .section-desc
+    color: #999999
+  .rounded-form
+    margin-top: 175px
+
+.bg-begin
+  position: absolute
+  right: 0
+  top: 40px

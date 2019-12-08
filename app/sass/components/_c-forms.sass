@@ -1,0 +1,57 @@
+form
+  position: relative
+  h3
+    font-size: 26px
+  .form-labels-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+  input
+    width: 100%
+    color: #a6a6a6
+    line-height: 1
+    border-radius: 30px
+    border: 1px solid #dddddd
+    padding: 15px 27px 17px
+    &::placeholder
+      color: #a6a6a6
+    &.error
+      border-color: red!important
+      color: red!important
+      &::placeholder
+        color: red!important
+  .btn
+    padding-top: 24px
+    padding-bottom: 22px
+  .policy
+    font-size: 14px
+    color: $dark
+    opacity: 0.5
+    a
+      color: $dark
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+  .help-block
+    display: none
+
+.rounded-form
+  background-color: #f7f7f7
+  color: $dark
+  padding: 60px 175px 50px 485px
+  border-radius: 180px
+  box-shadow: 0 0 0 50px rgba(#f7f7f7, .5), 0 0 15px 5px rgba(#000, .15)
+  .form-labels-wrap
+    margin: 30px 0
+    label, .btn
+      width: calc(50% - 15px)
+  .form-img
+    position: absolute
+    left: 130px
+    bottom: 0
+  .hand-img
+    position: absolute
+    right: 20px
+    bottom: -135px
+
+
