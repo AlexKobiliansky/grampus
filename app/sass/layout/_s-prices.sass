@@ -1,0 +1,65 @@
+.s-prices
+  padding: 115px 0
+  position: relative
+  .section-title
+    span
+      position: absolute
+      font-size: 190px
+      font-weight: 900
+      opacity: .04
+      text-transform: uppercase
+      left: 0
+      top: 40px
+      width: 100%
+      text-align: center
+      white-space: nowrap
+
+.price-item
+  &-top
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-bottom: 55px
+  &-img
+    width: 260px
+  &-content
+    width: calc(100% - 290px)
+    line-height: 1
+  &-period
+    font-size: 14px
+    color: #999
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.075em
+    margin-bottom: 15px
+  &-title
+    font-size: 42px
+    font-weight: 700
+    margin-bottom: 10px
+  &-price
+    font-size: 42px
+    font-weight: 700
+    color: $accent
+    margin-bottom: 10px
+  &-ul
+    li
+      position: relative
+      padding-left: 35px
+      margin-bottom: 18px
+      &:before
+        content: ''
+        position: absolute
+        width: 16px
+        height: 12px
+        +bg-cover
+        background-image: url('../img/icons/red-check-angle.svg')
+        left: 0
+        top: 5px
+  &.first-item
+    .price-item-content
+      position: relative
+      left: -70px
+  &.second-item
+    .price-item-top
+      position: relative
+      left: -70px

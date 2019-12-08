@@ -3,11 +3,24 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1700px)
+  .s-prices
+    .section-title
+      span
+        font-size: 160px
+        top: 60px
+
 @media (max-width: 1500px)
   .bg-begin
     right: -100px
 
 @media (max-width: 1400px)
+
+  .s-prices
+    .section-title
+      span
+        font-size: 130px
+        top: 73px
 
   .bg-quality
     top: 170px
@@ -18,6 +31,25 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .price-item
+    &-img
+      width: 200px
+    &-content
+      width: calc(100% - 230px)
+    &-title
+      font-size: 36px
+    &-price
+      font-size: 36px
+    &.first-item
+      .price-item-content
+        left: -40px
+
+  .s-prices
+    .section-title
+      span
+        font-size: 110px
+        top: 82px
 
   .s-form
     .section-title
@@ -118,6 +150,27 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .price-item
+    margin-bottom: 75px
+    &-top
+      justify-content: center
+      margin-bottom: 35px
+    &-content
+      width: auto
+    &-img
+      margin-right: 30px
+    &.second-item
+      .price-item-top
+        left: 0
+
+  .s-prices
+    padding: 75px 0 0
+    .section-title
+      margin-bottom: 30px
+      span
+        font-size: 85px
+        top: 52px
 
   .s-form
     text-align: center
@@ -235,6 +288,9 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-prices
+    overflow: hidden
+
   .dark-form
     .form-labels-wrap
       flex-direction: row
@@ -315,6 +371,27 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-prices
+    .section-title
+      span
+        display: none
+
+  .price-item
+    &-img
+      width: 150px
+    &-title
+      font-size: 24px
+      margin-bottom: 8px
+    &-price
+      font-size: 24px
+      margin-bottom: 0
+    &-period
+      font-size: 12px
+      margin-bottom: 8px
+    &.second-item
+      .price-item-top
+        left: -15px
 
   .img-modes
     margin: 30px auto

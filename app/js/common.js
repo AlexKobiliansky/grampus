@@ -35,6 +35,19 @@ $(document).ready(function(){
     <!-- /javascript -->
 
 
+    function heightses() {
+        if ($(window).width()>=992) {
+            $('.price-item-top').matchHeight();
+        }
+    }
+
+    $(window).resize(function() {
+        heightses();
+    });
+
+    heightses();
+
+    /** FORMS start */
     var uPhone = $('.user-phone');
     uPhone.mask("+7 (999) 999-99-99",{autoclear: false});
 
@@ -63,4 +76,5 @@ $(document).ready(function(){
         });
         return false;
     });
+    /** FORMS end */
 });
