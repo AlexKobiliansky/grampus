@@ -14,6 +14,29 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .bg-stages
+    top: 125px
+
+  .stages-wrap
+    padding-left: 0
+    max-width: 960px
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+    flex-wrap: wrap
+    justify-content: space-between
+
+  .stage-item
+    width: calc(33.333% - 20px)
+    margin-right: 0
+    margin-bottom: 30px
+    &:last-child
+      border-top-right-radius: 10px
+      border-bottom-right-radius: 10px
+      .stage-item-bg
+        right: 50px
+
+
   .s-begin
     .rounded-form
       margin-top: 100px
@@ -63,6 +86,23 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-stages
+    overflow: hidden
+
+  .stages-wrap
+    max-width: 720px
+
+  .stage-item
+    width: calc(50% - 15px)
+    &:last-child
+      width: calc(50% - 15px)
+      flex-grow: inherit
+      .stage-item-bg
+        top: -30px
+        right: -130px
+        height: 340px
+        width: auto
 
   .section-desc
     padding-left: 50px
@@ -199,6 +239,19 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .bg-stages
+    top: 175px
+
+  .stages-wrap
+    margin-left: 15px
+    margin-right: 15px
+    width: calc(100% - 30px)
+
+  .stage-item
+    width: 100%
+    &:last-child
+      width: 100%
 
   .s-begin
     padding-top: 30px
