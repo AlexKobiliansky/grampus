@@ -8,11 +8,31 @@
     right: -100px
 
 @media (max-width: 1400px)
+
+  .bg-quality
+    top: 170px
+    right: -300px
+
   .bg-begin
     right: -150px
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .spec-item
+    &-img
+      height: 375px
+    &-name
+      font-size: 22px
+
+
+  .s-quality
+    padding-top: 120px
+
+  .bg-quality
+    top: auto
+    bottom: 100px
+    right: -70px
 
   .bg-stages
     top: 125px
@@ -86,6 +106,25 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-quality
+    padding-bottom: 50px
+
+  .quaity-wrap
+    ul
+      margin-bottom: 30px
+
+  .specs-wrap
+    margin-top: 50px
+    flex-wrap: wrap
+
+  .spec-item
+    width: calc(50% - 15px)
+    margin-bottom: 50px
+    &-img
+      height: 500px
+    &-name
+      font-size: 26px
 
   .s-stages
     overflow: hidden
@@ -174,6 +213,17 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .quaity-wrap
+    font-size: 18px
+
+  .spec-item
+    &-img
+      height: 375px
+    &-name
+      font-size: 22px
+
+
+
   form
     h3
       margin-bottom: 15px
@@ -239,6 +289,16 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-quality
+    padding-top: 70px
+
+  .spec-item
+    width: 100%
+    padding-left: 65px
+    padding-right: 65px
+    &-img
+      height: 420px
 
   .bg-stages
     top: 175px
@@ -318,7 +378,9 @@
     font-size: 12px
 
 @media (max-width: 390px)
-  //
+  .spec-item
+    padding-left: 25px
+    padding-right: 25px
 /*==========  Mobile First  ==========*/
 
 // ≤480px
