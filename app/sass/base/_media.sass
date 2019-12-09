@@ -29,6 +29,9 @@
 
 @media (max-width: 1400px)
 
+  .s-gallery
+    background-position: right bottom
+
   .cases-img
     width: 550px
   .bg-cases
@@ -69,6 +72,47 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .s-gallery
+    padding-top: 200px
+    padding-bottom: 1220px
+
+  .gallery-content
+    width: 600px
+
+  .gallery-item
+    width: 220px
+    height: 220px
+    &:nth-child(1)
+      top: -145px
+    &:nth-child(2)
+      top: 25px
+    &:nth-child(3)
+      left: 200px
+    &:nth-child(4)
+      left: 400px
+      top: 25px
+    &:nth-child(5)
+      top: 150px
+    &:nth-child(6)
+    &:nth-child(7)
+      top: 480px
+    &:nth-child(8)
+      left: 465px
+      top: 275px
+    &:nth-child(9)
+      width: 320px
+      height: 320px
+      top: 675px
+    &:nth-child(10)
+      width: 370px
+      height: 370px
+      left: 365px
+      top: 800px
+    &:nth-child(11)
+      width: 320px
+      height: 320px
+      top: 475px
 
   .case-slide
     &-link
@@ -225,6 +269,45 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-gallery
+    padding-top: 75px
+    padding-bottom: 1375px
+  .gallery-content
+    width: 100%
+
+  .gallery-item
+    width: 200px
+    height: 200px
+    &:nth-child(1)
+      top: 0
+    &:nth-child(3)
+      left: 121px
+    &:nth-child(4)
+      left: 247px
+    &:nth-child(5)
+      right: 104px
+      top: 222px
+    &:nth-child(6)
+      top: 430px
+    &:nth-child(7)
+      left: 255px
+      top: 430px
+    &:nth-child(8)
+      left: auto
+      right: 0
+      top: 445px
+    &:nth-child(9)
+      width: 350px
+      height: 350px
+    &:nth-child(10)
+      left: 260px
+      top: 960px
+    &:nth-child(11)
+      width: 270px
+      height: 270px
+      right: 40px
+      top: 665px
 
   .bg-cases
     display: none
@@ -414,6 +497,69 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-gallery
+    padding-bottom: 50px
+
+  .gallery-item
+    position: relative
+    display: inline-block
+    margin-bottom: -10px
+    &:nth-child(1)
+      left: 0
+      top: 0
+      width: 175px
+      height: 175px
+    &:nth-child(2)
+      left: 40px
+      top: 0
+      width: 175px
+      height: 175px
+    &:nth-child(3)
+      left: 105px
+      top: 0
+      width: 175px
+      height: 175px
+    &:nth-child(4)
+      left: 140px
+      top: 0
+      width: 175px
+      height: 175px
+    &:nth-child(5)
+      left: 0
+      top: 0
+      width: 175px
+      height: 175px
+    &:nth-child(6)
+      left: 40px
+      top: 0
+      width: 175px
+      height: 175px
+    &:nth-child(7)
+      left: 105px
+      top: 0
+      width: 175px
+      height: 175px
+    &:nth-child(8)
+      left: 140px
+      top: 0
+      width: 175px
+      height: 175px
+    &:nth-child(9)
+      left: 0
+      top: 0
+      width: 175px
+      height: 175px
+    &:nth-child(10)
+      left: 40px
+      top: 0
+      width: 175px
+      height: 175px
+    &:nth-child(11)
+      left: 105px
+      top: 0
+      width: 175px
+      height: 175px
+
   .think-block
     width: 100%
     padding: 30px 35px
@@ -512,6 +658,55 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-gallery
+    font-size: 16px
+    line-height: 1.4
+    text-align: center
+    .section-title
+      text-align: center
+
+  .gallery-wrap
+    margin-top: 90px
+
+  .gallery-item
+    display: block
+    margin-left: auto
+    margin-right: auto
+    margin-top: -65px
+    &:nth-child(1)
+      left: -90px
+      top: 0
+    &:nth-child(2)
+      left: 90px
+      top: 0
+    &:nth-child(3)
+      left: -90px
+      top: 0
+    &:nth-child(4)
+      left: 90px
+      top: 0
+    &:nth-child(5)
+      left: -90px
+      top: 0
+    &:nth-child(6)
+      left: 90px
+      top: 0
+    &:nth-child(7)
+      left: -90px
+      top: 0
+    &:nth-child(8)
+      left: 90px
+      top: 0
+    &:nth-child(9)
+      left: -90px
+      top: 0
+    &:nth-child(10)
+      left: 90px
+      top: 0
+    &:nth-child(11)
+      left: -90px
+      top: 0
 
   .s-cases
     padding-top: 100px
@@ -662,6 +857,44 @@
     font-size: 12px
 
 @media (max-width: 390px)
+
+  .gallery-item
+    margin-top: -25px
+    &:nth-child(1)
+      left: -60px
+      top: 0
+    &:nth-child(2)
+      left: 60px
+      top: 0
+    &:nth-child(3)
+      left: -60px
+      top: 0
+    &:nth-child(4)
+      left: 60px
+      top: 0
+    &:nth-child(5)
+      left: -60px
+      top: 0
+    &:nth-child(6)
+      left: 60px
+      top: 0
+    &:nth-child(7)
+      left: -60px
+      top: 0
+    &:nth-child(8)
+      left: 60px
+      top: 0
+    &:nth-child(9)
+      left: -60px
+      top: 0
+    &:nth-child(10)
+      left: 60px
+      top: 0
+    &:nth-child(11)
+      left: -60px
+      top: 0
+
+
   .spec-item
     padding-left: 25px
     padding-right: 25px
