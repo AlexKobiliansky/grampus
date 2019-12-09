@@ -3,6 +3,13 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1800px)
+  .bg-cases
+    right: -100px
+
+  .cases-img
+    right: 15px
+
 @media (max-width: 1700px)
   .s-prices
     .section-title
@@ -10,11 +17,22 @@
         font-size: 160px
         top: 60px
 
+@media (max-width: 1600px)
+  .cases-img
+    width: 650px
+  .bg-cases
+    right: -200px
+
 @media (max-width: 1500px)
   .bg-begin
     right: -100px
 
 @media (max-width: 1400px)
+
+  .cases-img
+    width: 550px
+  .bg-cases
+    right: -250px
 
   .s-prices
     .section-title
@@ -29,8 +47,65 @@
   .bg-begin
     right: -150px
 
+@media (max-width: 1300px)
+  .think-block
+    left: 0
+    z-index: 2
+  .cases-img
+    width: 450px
+    top: 0
+  .cases-wrap
+    margin-top: 100px
+  .bg-cases
+    right: 0
+    width: 800px
+    top: 100px
+  .cases-slider-nav
+    left: 0
+    width: 550px
+  .cases-preview
+    left: 0
+    width: 550px
+
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .case-slide
+    &-link
+      font-size: 22px
+    &-name
+      font-size: 16px
+
+  .cases-slider-nav
+    top: -53px
+    width: 475px
+
+  .cases-nav
+    width: 50px
+    height: 50px
+    background-size: 16px
+
+  .cases-preview
+    font-size: 16px
+    width: 475px
+    &-name
+      font-size: 18px
+    &-title
+      margin-bottom: 8px
+
+  .case-advert-col .col-value
+    font-size: 22px
+
+  .case-advert
+    right: -45px
+    max-width: 400px
+
+  .bg-cases
+    width: 600px
+    top: 430px
+
+  .think-block
+    z-index: 4
 
   .price-item
     &-img
@@ -150,6 +225,57 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .bg-cases
+    display: none
+
+  .s-cases
+    background-color: #0f3357
+    padding: 50px 0
+    color: #fff
+
+  .case-advert
+    position: relative
+    right: 0
+    top: 0
+    margin-left: auto
+    margin-right: auto
+
+  .cases-slider-nav
+    width: 100%
+    top: calc(50% - 25px)
+    position: absolute
+
+  .cases-wrap
+    width: 100%
+
+  .cases-preview
+    display: none
+
+  .cases-title
+    text-align: center
+  .cases-text
+    text-align: center
+
+  .cases-img
+    display: none
+
+  .case-slide
+    &-img
+      margin-left: auto
+      margin-right: auto
+    &-content
+      text-align: center
+      padding-left: 0
+    &-link
+      font-size: 26px
+      color: #fff
+
+  .cases-slider
+    margin-bottom: 30px
+
+  .think-block
+    color: $text
 
   .price-item
     margin-bottom: 75px
@@ -288,6 +414,21 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .think-block
+    width: 100%
+    padding: 30px 35px
+
+  .cases-title
+    font-size: 32px
+
+  .cases-slider
+    margin-top: 30px
+
+  .case-slide
+    &-img
+      width: 300px
+      height: 300px
+
   .s-prices
     overflow: hidden
 
@@ -371,6 +512,34 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-cases
+    padding-top: 100px
+
+  .think-block
+    font-size: 16px
+    line-height: 1.4
+    padding: 30px 20px
+
+  .case-slide
+    &-img
+      width: 250px
+      height: 250px
+    &-link
+      font-size: 20px
+
+  .case-advert-col
+    .col-name
+      font-size: 12px
+      margin-bottom: 5px
+    .col-title
+      font-size: 15px
+    .col-value
+      font-size: 18px
+
+  .cases-slider
+    &-nav
+      top: 320px
 
   .s-prices
     .section-title
