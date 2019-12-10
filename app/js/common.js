@@ -80,7 +80,7 @@ $(document).ready(function(){
     var $casesSlider = $('.cases-slider').owlCarousel({
         loop: true,
         nav: false,
-
+        navSpeed: 7000,
         margin: 70,
         dots: false,
         autoHeight: false,
@@ -98,17 +98,16 @@ $(document).ready(function(){
     });
 
     $('.cases-prev').click(function() {
-        $casesSlider.trigger('prev.owl.carousel');
+        $casesSlider.trigger('prev.owl.carousel', 800);
     });
 
     $('.cases-next').click(function() {
-        $casesSlider.trigger('next.owl.carousel');
+        $casesSlider.trigger('next.owl.carousel', 800);
     });
 
     $casesSlider.on('changed.owl.carousel', function (e) {
         $('.cases-slider .owl-item').removeClass('explice');
         var currentSlideIndex = e.item.index + 1;
-        console.log(currentSlideIndex);
         var currentSlide = $(".cases-slider .owl-item:nth-child("+currentSlideIndex+")");
         var nextSlide = $(".cases-slider .owl-item:nth-child("+(currentSlideIndex+1)+")");
         var prevSlide = $(".cases-slider .owl-item:nth-child("+(currentSlideIndex-1)+")");
