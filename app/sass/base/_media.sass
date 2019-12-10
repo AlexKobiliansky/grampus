@@ -703,6 +703,8 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+
+
   .popup-form
     padding-left: 25px
     padding-right: 25px
@@ -906,16 +908,36 @@
     padding-left: 0
     align-items: center
     .call
+      display: none
       margin-right: 0
       text-align: center
       margin-left: 15px
       margin-bottom: 15px
 
   .site-info
+    width: 100%
+    justify-content: space-between
     .logo
       margin-right: 15px
   .site-desc
     font-size: 12px
+    display: none
+
+  .m-call
+    display: block
+    font-size: 9px
+    font-weight: 700
+    color: #fff
+    letter-spacing: 0.075em
+    .svg
+      width: 25px
+      height: auto
+      fill: #ff8465
+      display: block
+      margin-left: auto
+      margin-right: auto
+    &:hover, &:active, &:focus
+      color: #fff
 
 @media (max-width: 390px)
 
