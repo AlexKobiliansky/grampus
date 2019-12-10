@@ -2,6 +2,8 @@ form
   position: relative
   h3
     font-size: 26px
+    span
+      color: $accent
   .form-labels-wrap
     display: flex
     justify-content: space-between
@@ -78,5 +80,75 @@ form
       color: #fff
       &:hover
         color: #fff
+  .btn
+    height: 61px
+
+.popup-form
+  background-color: #fff
+  width: 100%
+  max-width: 570px
+  margin-left: auto
+  margin-right: auto
+  border-radius: 8px
+  padding: 40px 45px
+  border: 1px solid #eee
+  .form-labels-wrap
+    margin-top: 30px
+    margin-bottom: 20px
+    flex-wrap: wrap
+  label
+    margin-bottom: 0
+  label, .btn
+    width: calc(50% - 5px)
+
+.present-form
+  background-image: url('../img/bg-present.png')
+  background-repeat: no-repeat
+  background-position: top right -120px
+
+.form-option
+  width: 100%
+  line-height: 1
+  font-weight: 700
+  font-size: 14px
+  text-align: center
+  text-transform: uppercase
+  padding: 23px 20px 21px
+  border: 1px solid #cdcdcd
+  color: $text
+  border-radius: 30px
+  margin-bottom: 15px
+  &:hover, &.active
+    color: $accent
+    border-color: $accent
+
+
+.stock-deadline
+  color: #999999
+  font-size: 14px
+  text-transform: uppercase
+  margin-bottom: 15px
+
+//MY_MFP_ZOOM_IN
+.my-mfp-zoom-in
+  .zoom-anim-dialog, .popup-form
+    opacity: 0
+    transition: all 0.5s ease-in-out
+    transform: scale(0.7)
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .popup-form
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .popup-form
+    transform: scale(0.7)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.5s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .9
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+
 
 

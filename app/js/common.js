@@ -141,6 +141,23 @@ $(document).ready(function(){
     heightses();
 
     /** FORMS start */
+
+    $('.preloader').fadeOut();
+
+    $(function() {
+        $("a[href='#popup-form'], a[href='#present-form']").magnificPopup({
+            type: "inline",
+            fixedContentPos: !1,
+            fixedBgPos: !0,
+            overflowY: "auto",
+            closeBtnInside: !0,
+            preloader: !1,
+            midClick: !0,
+            removalDelay: 300,
+            mainClass: "my-mfp-zoom-in"
+        })
+    });
+
     var uPhone = $('.user-phone');
     uPhone.mask("+7 (999) 999-99-99",{autoclear: false});
 
@@ -155,17 +172,35 @@ $(document).ready(function(){
         scrollToTopOnError: false
     });
 
+    $('.form-option').on('click', function(e){
+       e.preventDefault();
+       var th = $(this);
+       var stockOption = th.data('option');
+
+       th.addClass('active');
+       th.siblings('.form-option').removeClass('active');
+
+       $('#stock-option').val(stockOption);
+
+    });
+
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
+        var t = th.find(".btn").text();
+        th.find(".btn").prop("disabled", "disabled").addClass("disabled").text("Отправлено!");
 
         $.ajax({
             type: "POST",
-            url: "mail.php", //Change
+            url: "/mail.php", //Change
             data: th.serialize()
         }).done(function() {
-
+            setTimeout(function() {
+                th.find(".btn").removeAttr('disabled').removeClass("disabled").text(t);
+                th.trigger("reset");
+                $.magnificPopup.close();
+            }, 2000);
         });
         return false;
     });

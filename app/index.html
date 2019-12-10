@@ -27,6 +27,21 @@
 </head>
 
 <body>
+<!-- preloader -->
+<div class="preloader">
+	<div class="sk-cube-grid">
+		<div class="sk-cube sk-cube-1"></div>
+		<div class="sk-cube sk-cube-2"></div>
+		<div class="sk-cube sk-cube-3"></div>
+		<div class="sk-cube sk-cube-4"></div>
+		<div class="sk-cube sk-cube-5"></div>
+		<div class="sk-cube sk-cube-6"></div>
+		<div class="sk-cube sk-cube-7"></div>
+		<div class="sk-cube sk-cube-8"></div>
+		<div class="sk-cube sk-cube-9"></div>
+	</div>
+</div>
+<!-- preloader -->
 
 <!-- ======= SECTION INTRO START ======= -->
 <section class="s-intro">
@@ -45,7 +60,7 @@
 					<a href="tel:+79657458748">+7 (965) 745-87-48</a>
 					<span>Звонок за наш счет</span>
 				</div>
-				<a href="#0" class="btn btn-present">Подарок для вас</a>
+				<a href="#present-form" class="btn btn-present">Подарок для вас</a>
 			</div>
 		</header>
 
@@ -55,7 +70,7 @@
 					<h2>Агенство Grampus</h2>
 					<h1>Настройка Яндекс.Директ <br> и Google Adwords</h1>
 					<p>Сделаем из 10 клиентов - 100 за несколько дней!</p>
-					<a href="#0" class="btn btn-accent">Узнать подробнее</a>
+					<a href="#popup-form" class="btn btn-red">Узнать подробнее</a>
 				</div>
 				<div class="col-lg-6">
 					<img src="img/intro-img.png" alt="alt" class="img-responsive intro-img">
@@ -124,6 +139,7 @@
 			<input type="hidden" name="form_subject" value="Заявка с сайта Grampus">
 			<!-- END Hidden Required Fields -->
 
+			<input type="hidden" name="Тема" value="Заявка на обратный звонок">
 
 			<h3>Оставьте заявку и полетели!</h3>
 			<p>Менеджер Александр свяжется с вами в течение 3 минут и посчитает оптимальный бюджет рекламной кампании</p>
@@ -314,6 +330,8 @@
 					<input type="hidden" name="form_subject" value="Заявка с сайта Grampus">
 					<!-- END Hidden Required Fields -->
 
+					<input type="hidden" name="Тема" value="Получить ТОП-150 методов рекламы">
+
 					<div class="form-labels-wrap">
 						<label>
 							<input type="text" class="user-phone" name="Телефон" placeholder="Телефон"
@@ -414,7 +432,7 @@
 			<h2 class="section-title">Вы только вдумайтесь...</h2>
 			<p>Мы предлагаем способ, при котором мы многократно преумножаем Ваши вложения. Способ, который 100% работает. Ведь вы тоже нашли нас в контекстной рекламе. Также и ваши клиенты найдут вас.</p>
 			<p>Для нас реклама выгодна, выгодна будет и для вас. Давайте начнем работать и вы убедитесь в этом сами, уже через 3 дня!</p>
-			<a href="#0" class="btn btn-red">Да, давайте!</a>
+			<a href="#popup-form" class="btn btn-red">Да, давайте!</a>
 		</div>
 
 		<div class="cases-wrap">
@@ -583,6 +601,8 @@
 				<input type="hidden" name="form_subject" value="Заявка с сайта Grampus">
 				<!-- END Hidden Required Fields -->
 
+				<input type="hidden" name="Тема" value="Заявка на обратный звонок">
+
 
 				<h3>Привет, меня зовут Александр!</h3>
 				<p>Оставьте заявку и я перезвоню вам в течение 30 секунд. Если не успею, вы получите скидку 10% на настройку контекстной рекламы</p>
@@ -644,7 +664,68 @@
 </section>
 <!-- ======= SECTION CONTACTS END ======= -->
 
+<div class="hidden">
+	<form class="contact-form popup-form" id="popup-form">
 
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Grampus">
+		<input type="hidden" name="admin_email" value="alexey.kobilianskiy@gmail.com">
+		<input type="hidden" name="form_subject" value="Заявка с сайта Grampus">
+		<!-- END Hidden Required Fields -->
+
+		<input type="hidden" name="Тема" value="Заявка на обратный звонок">
+
+		<h3>Отправить заявку</h3>
+
+		<p>Оставьте заявку, мы перезвоним вам в течение 2-х минут и ответим на все возникшие вопросы</p>
+
+		<div class="form-labels-wrap">
+			<label>
+				<input type="text" class="user-phone" name="Телефон" placeholder="Телефон"
+					   autocomplete="off" data-validation="custom"
+					   data-validation-regexp="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"
+					   data-validation-error-msg="* Укажите ваш телефон">
+			</label>
+
+			<button type="submit" class="btn btn-red btn">Отправить</button>
+		</div>
+		<div class="policy">Нажимая кнопку я соглашаюсь с <a href="#0">политикой конфиденциальности</a></div>
+	</form>
+
+	<form class="contact-form popup-form present-form" id="present-form">
+
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Grampus">
+		<input type="hidden" name="admin_email" value="alexey.kobilianskiy@gmail.com">
+		<input type="hidden" name="form_subject" value="Заявка с сайта Grampus">
+		<!-- END Hidden Required Fields -->
+
+		<input type="hidden" name="Тема" value="Получение скидки">
+		<input type="hidden" name="Скидка на" value="" id="stock-option">
+
+		<div class="stock-deadline">Только до 28 ноября!</div>
+
+		<h3>Получить <span>скидку 15%</span> на рекламную кампанию</h3>
+
+		<p>Оставьте заявку, мы перезвоним вам в течение 2-х минут и ответим на все возникшие вопросы</p>
+
+		<div class="form-labels-wrap">
+
+			<a href="#0" class="form-option" data-option="Экспресс-аналитика сайта">Экспресс-аналитика сайта</a>
+			<a href="#0" class="form-option" data-option="Консультация маркетолога">Консультация маркетолога</a>
+
+			<label>
+				<input type="text" class="user-phone" name="Телефон" placeholder="Телефон"
+					   autocomplete="off" data-validation="custom"
+					   data-validation-regexp="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"
+					   data-validation-error-msg="* Укажите ваш телефон">
+			</label>
+
+			<button type="submit" class="btn btn-red btn">Отправить</button>
+		</div>
+		<div class="policy">Нажимая кнопку я соглашаюсь с <a href="#0">политикой конфиденциальности</a></div>
+	</form>
+</div>
 <script src="js/scripts.min.js"></script>
 
 </body>

@@ -691,8 +691,22 @@
     padding-left: 30px
     justify-content: space-between
 
+  .popup-form
+    .form-labels-wrap
+      flex-direction: row
+
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .popup-form
+    padding-left: 25px
+    padding-right: 25px
+    .form-labels-wrap
+      flex-direction: column
+    label, .btn
+      width: 100%
+    label
+      margin-bottom: 20px
 
   .contacts-block
     h3
@@ -899,6 +913,9 @@
     font-size: 12px
 
 @media (max-width: 390px)
+
+  .form-option
+    font-size: 12px
 
   .gallery-item
     margin-top: -25px
