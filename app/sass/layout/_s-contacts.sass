@@ -1,0 +1,95 @@
+.s-contacts
+  position: relative
+  form
+    position: relative
+    z-index: 3
+
+.map-img
+  position: absolute
+  left: 0
+  bottom: 0
+  z-index: 2
+
+.map-wrapper
+  position: relative
+  margin-top: -80px
+
+#map
+  height: 800px
+  background-color: #aeaeae
+  position: relative
+  background-position: center center
+  background-repeat: no-repeat
+
+.loader
+  position: absolute
+  top: 0
+  left: 0
+  box-sizing: border-box
+  width: 100%
+  height: 100%
+  overflow: hidden
+  color: #000000
+  transition: opacity .7s ease
+  opacity: 0
+  background-color: rgba(0,0,0,.55)
+  z-index: -2
+
+.loader:after,
+.loader:before
+  box-sizing: border-box
+
+.loader.is-active
+  top: 0
+  opacity: 1
+  z-index: 2
+
+.loader-default:after
+  position: absolute
+  top: calc(50% - 24px)
+  left: calc(50% - 24px)
+  width: 48px
+  height: 48px
+  content: ''
+  animation: rotation 1s linear infinite
+  border: solid 8px #ffffff
+  border-left-color: transparent
+  border-radius: 50%
+
+@keyframes rotation
+  from
+    transform: rotate(0)
+  to
+    transform: rotate(359deg)
+
+@keyframes blink
+  from
+    opacity: .5
+  to
+    opacity: 1
+
+.contacts-block
+  position: absolute
+  z-index: 3
+  bottom: 105px
+  left: calc((100vw - 1200px)/2)
+  color: #fff
+  font-weight: 700
+  h3
+    font-size: 42px
+
+.con-item
+  line-height: 1.2
+  margin-bottom: 18px
+  &-title
+    font-size: 14px
+    text-transform: uppercase
+    color: $accent
+    margin-bottom: 5px
+  &-desc
+    a
+      color: #fff
+      &:hover
+        text-decoration: underline
+
+

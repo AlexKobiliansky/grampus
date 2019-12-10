@@ -24,10 +24,17 @@
     right: -200px
 
 @media (max-width: 1500px)
+
+  .map-img
+    left: -100px
+
   .bg-begin
     right: -100px
 
 @media (max-width: 1400px)
+
+  .map-img
+    left: -200px
 
   .s-gallery
     background-position: right bottom
@@ -72,6 +79,9 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .contacts-block
+    left: calc((100vw - 960px)/2)
 
   .s-gallery
     padding-top: 200px
@@ -269,6 +279,25 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-contacts
+    padding-top: 50px
+
+  .map-wrapper
+    margin-top: -40px
+
+  #map
+    height: 500px
+
+  .contacts-block
+    background-color: #01274d
+    left: 15px
+    padding: 25px
+    border-radius: 5px
+    bottom: 15px
+
+  .map-img
+    display: none
 
   .s-gallery
     padding-top: 75px
@@ -497,6 +526,12 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .contacts-block
+    position: relative
+    left: 0
+    bottom: 0
+    margin-top: 60px
+
   .s-gallery
     padding-bottom: 50px
 
@@ -658,6 +693,13 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .contacts-block
+    h3
+      font-size: 36px
+
+  .con-item
+    font-size: 16px
 
   .s-gallery
     font-size: 16px
