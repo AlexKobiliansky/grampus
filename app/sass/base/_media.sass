@@ -786,6 +786,12 @@
     &-link
       font-size: 20px
 
+  .case-advert
+    &-title
+      display: none
+    &-img
+      display: none
+
   .case-advert-col
     .col-name
       font-size: 12px
@@ -836,11 +842,15 @@
     padding-top: 70px
 
   .spec-item
-    width: 100%
-    padding-left: 65px
-    padding-right: 65px
+    width: calc(50% - 10px)
     &-img
-      height: 420px
+      height: 285px
+    &-name
+      font-size: 20px
+      line-height: 1.2
+    &-post
+      font-size: 16px
+      line-height: 1.2
 
   .bg-stages
     top: 175px
@@ -888,10 +898,13 @@
     padding-bottom: 0
 
   .chars-wrap
-    flex-direction: column
+    flex-wrap: wrap
 
   .char-item
     margin-bottom: 50px
+    width: calc(50% - 10px)
+    &:last-child
+      width: 100%
 
   .intro-content
     h1
@@ -982,8 +995,17 @@
 
 
   .spec-item
-    padding-left: 25px
-    padding-right: 25px
+    width: calc(50% - 5px)
+    margin-bottom: 30px
+    &-img
+      height: 200px
+      img
+        bottom: -20px
+    &-name
+      font-size: 18px
+      margin-bottom: 10px
+    &-post
+      font-size: 14px
 /*==========  Mobile First  ==========*/
 
 // ≤480px
