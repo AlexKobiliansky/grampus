@@ -207,7 +207,17 @@ $(document).ready(function(){
     /** FORMS end */
 
 
-
+    if ($(window).width()>=992) {
+        $('.s-intro').hover(
+            function(){
+                $(this).parallaxify({
+                    alphaFilter: 0.1,
+                    motionType: 'performance',
+                    mouseMotionType: 'performance'
+                });
+            }
+        );
+    }
 
 
 
