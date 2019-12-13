@@ -3,9 +3,55 @@
   justify-content: space-between
   align-items: center
   padding: 27px 0
+  +mt(.3s)
+  position: relative
+  z-index: 10
+
+
+.header-wrap
+  +mt(.3s)
+  position: fixed
+  width: 100%
+  z-index: 9999
+  top: 0
+  left: 0
+  background-color: transparent
+  &.sticky
+    background-color: #fff
+    box-shadow: 0 1px 3px 0 rgba(#000, .1)
+    .main-head
+      padding: 15px 0
+    .logo-dark
+      opacity: 1
+      pointer-events: inherit
+    .logo-light
+      opacity: 0
+      pointer-events: none
+    .site-desc
+      color: $dark
+    .header-contacts
+      .call
+        a
+          color: $text
+        span
+          color: #6d6d6d
+    .m-call
+      color: $dark
+
+.logo-dark
+  position: absolute
+  left: 0
+  +mt(.3s)
+  opacity: 0
+  pointer-events: none
+
+.logo-light
+  +mt(.3s)
 
 .s-intro
+  padding-top: 110px
   position: relative
+  z-index: 10
   overflow: hidden
   .container
     position: relative
@@ -13,7 +59,7 @@
 
 .bg-intro
   position: absolute
-  top: 0
+  top: -110px
   left: -370px
   z-index: -1
 
@@ -21,6 +67,7 @@
   margin-left: 30px
   display: flex
   align-items: center
+  position: relative
   .logo
     margin-right: 30px
 

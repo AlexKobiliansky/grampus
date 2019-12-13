@@ -139,10 +139,21 @@ $(document).ready(function(){
 
     heightses();
 
-    /** FORMS start */
+
+
 
     $('.preloader').fadeOut();
 
+
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 30) {
+            $('.header-wrap').addClass('sticky')
+        } else {
+            $('.header-wrap').removeClass('sticky')
+        }
+    });
+
+    /** FORMS start */
     $(function() {
         $("a[href='#popup-form'], a[href='#present-form']").magnificPopup({
             type: "inline",
